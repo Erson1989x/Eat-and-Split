@@ -1,5 +1,5 @@
-import React from 'react'
-import Button from '../Button/Button'
+import React from "react";
+import Button from "../Button/Button";
 
 const FormSplitBill = () => {
   return (
@@ -17,8 +17,8 @@ const FormSplitBill = () => {
         <option value="friend">X</option>
       </select>
       <Button>Split Bill</Button>
-      </form>
-  )
-}
+    </form>
+  );
+};
 
-export default FormSplitBill
+export default FormSplitBill;
