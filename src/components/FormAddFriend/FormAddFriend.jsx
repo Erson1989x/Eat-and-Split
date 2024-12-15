@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../Button/Button'
 import { useState } from 'react'
 
-const FormAddFriend = () => {
+const FormAddFriend = ( { onAddFriend } ) => {
   const [name, setName] = useState('')
   const [image, setImage] = useState('https://i.pravatar.cc/48')
 
@@ -18,11 +18,11 @@ const FormAddFriend = () => {
       balance: 0,
       id,
     }
+    
+    onAddFriend(newFriend)
 
     setName('')
     setImage('https://i.pravatar.cc/48')
-
-    console.log(newFriend)
   }
 
   return (
